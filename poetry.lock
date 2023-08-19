@@ -138,6 +138,20 @@ python-dateutil = ">=2.8.1"
 dev = ["flake8", "markdown", "twine", "wheel"]
 
 [[package]]
+name = "griffe"
+version = "0.33.0"
+description = "Signatures for entire Python programs. Extract the structure, the frame, the skeleton of your project, to generate API documentation or find breaking changes in your API."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "griffe-0.33.0-py3-none-any.whl", hash = "sha256:16af15d0140c0a5f0b2628d33235fef91a6d8a832dd7cff5759dfe6b7d7a7a49"},
+    {file = "griffe-0.33.0.tar.gz", hash = "sha256:783bcb7e7f0d346fcb0cb8072667ca8f6ce7ff776bb278fbccf8a3a753a793e4"},
+]
+
+[package.dependencies]
+colorama = ">=0.4"
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -351,6 +365,21 @@ pymdown-extensions = ">=6.3"
 crystal = ["mkdocstrings-crystal (>=0.3.4)"]
 python = ["mkdocstrings-python (>=0.5.2)"]
 python-legacy = ["mkdocstrings-python-legacy (>=0.2.1)"]
+
+[[package]]
+name = "mkdocstrings-python"
+version = "1.4.0"
+description = "A Python handler for mkdocstrings."
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "mkdocstrings_python-1.4.0-py3-none-any.whl", hash = "sha256:46f4b0ed8540c6bfd0c3f50471831a7bdb9a1bf35f24400525721d7555aa355c"},
+    {file = "mkdocstrings_python-1.4.0.tar.gz", hash = "sha256:c92304c402928a05c793203dadee7a1a51b5ae56404fd594d0b2db49a7b3957a"},
+]
+
+[package.dependencies]
+griffe = ">=0.33"
+mkdocstrings = ">=0.20"
 
 [[package]]
 name = "packaging"
@@ -683,4 +712,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "f86a9569462a3ee1f1b068f6368c206bf85029c8c593c1eff257ae8ca637c89f"
+content-hash = "fead193e3b1894e8a03c23abb6033c17f38c209b6ff9bff97bb8c75cdaf9dc2b"
