@@ -16,6 +16,10 @@ mkdocs-material = "^9.1.21"
 mkdocstrings = "^0.22.0"
 mkdocstrings-python = "^1.4.0"
 
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
