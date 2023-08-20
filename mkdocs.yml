@@ -73,3 +73,13 @@ extra_javascript:
 
 plugins:
   - search
+  - mkdocstrings
+
+extra:
+  alternate:
+    - name: PT
+      link: /pt/
+      lang: pt
+    - name: EN
+      link: /en/ 
+      lang: en
