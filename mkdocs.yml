@@ -13,11 +13,12 @@ edit_uri: tree/main/docs
 theme:
   features:
     - navigation.tabs
+    - navigation.top
     - content.code.annotate
   name: material
   language: pt-BR
-  logo: assets/logo.png
-  favicon: assets/logo.png
+  logo: assets/material.svg
+  favicon: assets/material.svg
   palette: 
     - scheme: default
       primary: black
@@ -83,3 +84,8 @@ extra:
     - name: EN
       link: /en/ 
       lang: en
+
+nav:
+  - Home: index.md
+  - Projeto:
+    - Funcionalidades: markdown/funcionalidades.md
