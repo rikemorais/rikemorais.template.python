@@ -5,7 +5,6 @@ site_description: >-
   o trabalho de construir uma documentação. Portanto, espero
   que esse template seja usado para aumento de produtividade.
 copyright: Copyright &copy; Henrique Morais
-
 repo_name: rikemorais.template.python
 repo_url: https://github.com/rikemorais/rikemorais.template.python
 edit_uri: tree/main/docs
@@ -19,7 +18,7 @@ theme:
   language: pt-BR
   logo: assets/material.svg
   favicon: assets/material.svg
-  palette: 
+  palette:
     - scheme: default
       primary: black
       accent: yellow
@@ -82,11 +81,12 @@ extra:
       link: /pt/
       lang: pt
     - name: EN
-      link: /en/ 
+      link: /en/
       lang: en
 
 nav:
   - Home: index.md
-  - API: api/conta.md
+  - API:
+    - Conta: API/conta.md
   - Projeto:
-    - Funcionalidades: markdown/funcionalidades.md
+      - Funcionalidades: markdown/funcionalidades.md
