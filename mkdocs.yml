@@ -17,8 +17,8 @@ theme:
     - content.code.annotate
   name: material
   language: pt-BR
-  logo: assets/logo.png
-  favicon: assets/logo.png
+  logo: assets/material.svg
+  favicon: assets/material.svg
   palette: 
     - scheme: default
       primary: black
