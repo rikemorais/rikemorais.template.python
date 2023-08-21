@@ -83,10 +83,3 @@ extra:
     - name: EN
       link: /en/
       lang: en
-
-nav:
-  - Home: index.md
-  - API:
-    - Conta: API/conta.md
-  - Projeto:
-      - Funcionalidades: markdown/funcionalidades.md
