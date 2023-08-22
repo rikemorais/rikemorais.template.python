@@ -5,6 +5,7 @@ site_description: >-
   o trabalho de construir uma documentação. Portanto, espero
   que esse template seja usado para aumento de produtividade.
 copyright: Copyright &copy; Henrique Morais
+
 repo_name: rikemorais.template.python
 repo_url: https://github.com/rikemorais/rikemorais.template.python
 edit_uri: tree/main/docs
@@ -14,6 +15,9 @@ theme:
     - navigation.tabs
     - navigation.top
     - content.code.annotate
+    - search.highlight
+    - search.share
+    - search.suggest
   name: material
   language: pt-BR
   logo: assets/material.svg
@@ -42,22 +46,33 @@ markdown_extensions:
   - tables
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.critic
+  - pymdownx.betterem
   - pymdownx.caret
+  - pymdownx.critic
   - pymdownx.details
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - pymdownx.highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      auto_title: true
+      linenums: true
+      linenums_style: pymdownx-inline
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.snippets
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
