@@ -37,4 +37,4 @@ jobs:
     
     - name: Run Interrogate
       run: |
-        interrogate --quiet --fail-under 95 src tests
+        interrogate --quiet --fail-under 95
