@@ -32,17 +32,17 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.interrogate]
-ignore-init-method = true
+ignore-init-method = false
 ignore-init-module = true
 ignore-magic = false
 ignore-semiprivate = false
 ignore-private = false
-ignore-property-decorators = false
-ignore-module = false
+ignore-property-decorators = true
+ignore-module = true
 ignore-nested-functions = false
 ignore-nested-classes = true
 ignore-setters = false
-fail-under = 75
+fail-under = 95
 exclude = ["setup.py", "docs", "build", "tests", "*exceptions.py"]
 ignore-regex = ["^get$", "^mock_.*", ".*BaseClass.*"]
 verbose = 0
