@@ -28,7 +28,17 @@ class Conta:
             Retorna o saldo atual da conta.
     """
 
-    def __init__(self, titular, cpf, endereco, telefone, agencia, numero_conta, tipo_conta, saldo_inicial=0.0):
+    def __init__(
+        self,
+        titular,
+        cpf,
+        endereco,
+        telefone,
+        agencia,
+        numero_conta,
+        tipo_conta,
+        saldo_inicial=0.0,
+    ):
         """
         Inicializa uma nova conta bancária.
 
@@ -65,9 +75,9 @@ class Conta:
         """
         if value > 0:
             self.saldo += value
-            return f'Depósito de R${value:.2f} realizado com sucesso.'
+            return f"Depósito de R${value:.2f} realizado com sucesso."
         else:
-            return 'O valor do depósito deve ser positivo.'
+            return "O valor do depósito deve ser positivo."
 
     def withdraw(self, value):
         """
@@ -81,9 +91,9 @@ class Conta:
         """
         if 0 < value <= self.saldo:
             self.saldo -= value
-            return f'Saque de R${value:.2f} realizado com sucesso.'
+            return f"Saque de R${value:.2f} realizado com sucesso."
         else:
-            return 'Saldo insuficiente ou valor inválido de saque.'
+            return "Saldo insuficiente ou valor inválido de saque."
 
     def get_balance(self):
         """
@@ -92,4 +102,4 @@ class Conta:
         Returns:
             str: Mensagem contendo o saldo atual da conta.
         """
-        return f'Saldo atual: R${self.saldo:.2f}'
+        return f"Saldo atual: R${self.saldo:.2f}"
