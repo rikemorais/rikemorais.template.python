@@ -1,4 +1,4 @@
-class ContaBancaria:
+class Conta:
     """
     Classe que representa uma Conta Bancária.
 
